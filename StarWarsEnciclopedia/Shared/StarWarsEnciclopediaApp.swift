@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct StarWarsEnciclopediaApp: App {
+    
+    let peopleRes = PeopleRes()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(peopleRes)
         }
     }
 }
